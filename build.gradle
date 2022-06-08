@@ -44,7 +44,7 @@ allure {
     }
 }
 
-test {
+tasks.withType(Test) {
     useJUnitPlatform()
     systemProperties(System.getProperties())
 }
