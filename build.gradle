@@ -48,3 +48,9 @@ tasks.withType(Test) {
     useJUnitPlatform()
     systemProperties(System.getProperties())
 }
+
+task systemProperties(type: Test) {
+    useJUnitPlatform{
+        includeTags "systemProperties"
+    }
+}
