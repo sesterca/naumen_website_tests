@@ -36,7 +36,7 @@ public class BaseTest {
         Configuration.browser = browser;
         Configuration.browserPosition = "0x0";
         Configuration.browserSize = browserSize;
-//        Configuration.remote = "https://" + login + ":" + password + "@" + remote + "/wd/hub";
+        Configuration.remote = "https://" + login + ":" + password + "@" + remote + "/wd/hub";
 
     }
 
