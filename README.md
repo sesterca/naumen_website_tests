@@ -31,3 +31,4 @@ gradle clean test
 
 ## Для просмотра отчета
 Под названием проекта кликнуть [<img src="image/Allure_Report.svg" width="70">](https://jenkins.autotests.cloud/job/012-sesterca-u13_employee_naumen_website/allure/)
+![](image/allure trend.jpg)
