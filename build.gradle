@@ -44,13 +44,7 @@ allure {
     }
 }
 
-tasks.withType(Test) {
+test {
     useJUnitPlatform()
     systemProperties(System.getProperties())
-}
-
-task systemProperties(type: Test) {
-    useJUnitPlatform{
-        includeTags "systemProperties"
-    }
 }
