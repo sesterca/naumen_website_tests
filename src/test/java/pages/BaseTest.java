@@ -19,11 +19,6 @@ public class BaseTest {
 
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
-        Configuration.browserCapabilities = capabilities;
-
         Credentials credits = ConfigFactory.create(Credentials.class);
         String baseUrl = System.getProperty("baseUrl", "https://www.naumen.ru/");
         String browser = System.getProperty("browser", "CHROME");
@@ -38,6 +33,10 @@ public class BaseTest {
         Configuration.browserSize = browserSize;
         Configuration.remote = "https://" + login + ":" + password + "@" + remote + "/wd/hub";
 
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", true);
+        Configuration.browserCapabilities = capabilities;
     }
 
     @AfterEach
