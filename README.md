@@ -39,8 +39,10 @@ gradle clean test
 <img src="image/allure trend.jpg">
 
 #### Экран подробного просмотра тестов тест-сьюта
+<img src="image/allure tests.jpg">
 
 #### Пример выполнения теста
-видео((
+![test_pass](https://user-images.githubusercontent.com/71780020/173231412-7821c04d-3a8f-4513-bd02-c8eaa5179f64.gif)
+
 ## Для уведомления о результатах тестирования
 <img src="image/telegram report.jpg">
